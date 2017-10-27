@@ -27,4 +27,12 @@ app.use(bodyParser.urlencoded({
 }));
 
 // set up the public direnctrory as static
-app.
+app.use(express.static("public"));
+
+app.use("/", routes);
+
+// Start up the express server
+// Listen on port 3000
+app.listen(port, function(){
+    console.log("We run this B* on port:", port);
+});
