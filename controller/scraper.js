@@ -19,7 +19,7 @@ function scrapeIt(callback) {
 		if (error) console.log("scraping error", error);
 
 		// save the html
-		var $ = cheerio.load(body)
+		var $ = cheerio.load(body);
 
 		// now scrape scrape scrape!
 		$('p.title').each(function(i, element) {
