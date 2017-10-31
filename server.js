@@ -5,7 +5,7 @@ var logger = require("morgan");
 var hbs = require("express-handlebars");
 
 // Require the routes and use them 
-var routes = require("./ruotes/routes");
+var routes = require("./routes/routes");
 
 // Initialize express
 var app = express();
